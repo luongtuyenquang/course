@@ -68,6 +68,8 @@
 <body class="preloading">
 
   <!-- Navbar -->
+ <div id="wrap">
+ <p class="nd">Loading...</p>	
 <div id="circle">
   <div class="loader">
     <div class="loader">
@@ -79,15 +81,13 @@
     </div>
   </div>
 </div>
-
+</div>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
-        <strong>ITSu</strong>
-      </a>
+      <a href="#" class="logo"><img src="img/logo.jpg"></a>
 
       <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -126,7 +126,7 @@
             </li>
             <li class="nav-item">
               <a href="./dangki.html" class="nav-link border border-light rounded" target="_blank">
-                <i class="fab fa-github mr-2"></i>Đăng Ký
+                <i class="fas fa-user mr-2"></i>Đăng Ký
               </a>
             </li>
           </ul>
@@ -160,7 +160,7 @@
 
         <br>
         <br>
-        <a href="#" class="btn btn-outline-white btn-lg">Start Here
+        <a href="#starthere" class="btn btn-outline-white btn-lg">Start Here
           <i class="fas fa-graduation-cap ml-2"></i>
         </a>
       </div>
@@ -171,7 +171,7 @@
 
   </div>
   <!-- Full Page Intro -->
-  <div class="container mt-40">
+  <div class="container mt-40" id="starthere">
     <h3 class="text-center">Các Khóa Học Miễn Phí</h3>
     <div class="row mt-30">
       <div class="col-md-4 col-sm-6">
@@ -274,9 +274,10 @@
       </li>
     </ul>
   </nav>
-
+  <br>
 
   <div class="container mt-40">
+    <div class="duongvien"></div>
     <h3 class="text-center">Các Khóa Học Có Phí</h3>
     <div class="row mt-30">
       <div class="col-md-4 col-sm-6">
@@ -382,7 +383,7 @@
   </nav>
 
   <div class="row mt-5"></div>
-  <div class="duongvien">---</div>
+  <div class="duongvien"></div>
 
   <div class="goclamviec">Góc Làm Việc Và Giải Trí</div>
   <div class="seriimg">
@@ -416,12 +417,64 @@
 
   </div>
 
+
+ <div class="row mt-5"></div>
+ <div class="container">
+  <div class="duongvien"></div>
+  <div class="khaigiang">
+    <p class="lich">--- LỊCH KHAI GIẢNG KHÓA HỌC ---</p>
+    <table border="1" cellpadding="20" cellspacing="0">
+      <tr class="bangmain" style="background-color: #33FF33; color: black">
+        <td class="bang1">Khóa Học</td>
+        <td class="bang1">Khai Giảng</td>
+        <td class="bang1">Giờ Học</td>
+        <td class="bang1">Ngày Học</td>
+        <td class="bang1">Địa Điểm</td>
+      </tr>
+      <tr class="bangmain">
+        <td class="bang">Khóa học lập trình Android</td>
+        <td class="bang">11/06/2019</td>
+        <td class="bang">18h-21h</td>
+        <td class="bang">T3, T5, T7</td>
+        <td class="bang">Số 01-Phù Đổng Thiên Vương-Phường 8-TP.Đà Lạt</td>
+      </tr>
+      <tr class="bangmain">
+        <td class="bang">Khóa học lập trình Node JS</td>
+        <td class="bang">13/06/2019</td>
+        <td class="bang">9h-12h</td>
+        <td class="bang">T2, T4, T6</td>
+        <td class="bang">72 Nguyễn Huệ - Quận 1 - TP.HCM</td>
+      </tr>
+      <tr class="bangmain">
+        <td class="bang">Khóa học lập trình Java</td>
+        <td class="bang">15/06/2019</td>
+        <td class="bang">14h-16h</td>
+        <td class="bang">T5, T7</td>
+        <td class="bang">12 Ngô Quyền - Quận 5 - TP.HCM</td>
+      </tr>
+      <tr class="bangmain">
+        <td class="bang">Khóa học lập trình PHP</td>
+        <td class="bang">17/06/2019</td>
+        <td class="bang">7h-9h30</td>
+        <td class="bang">T7, CN</td>
+        <td class="bang">78 Hai Bà Trưng - Quận 7 - TP.HCM</td>
+      </tr>
+      <tr class="bangmain">
+        <td class="bang">Khóa học lập trình C++</td>
+        <td class="bang">20/06/2019</td>
+        <td class="bang">19h-21h</td>
+        <td class="bang">T2, T6, CN</td>
+        <td class="bang">12 Ngô Quyền - Quận 5 - TP.HCM</td>
+      </tr>
+    </table>
+</div>
+</div>
   <!--Footer-->
 
   <div class="footer-all d-none d-sm-none d-md-none d-lg-none d-xl-block">
     <div class="footer1">
       <p>Trung Tâm Đào Tạo Lập Trình ITSu</p>
-      <h7>Số 1A-Phù Đổng Thiên Vương-Phường 8-TP.Đà Lạt</h7>
+      <h7>Số 01-Phù Đổng Thiên Vương-Phường 8-TP.Đà Lạt</h7>
       <br>
       <h7>Hotline: +84 912627961</h7>
       <br>
@@ -466,15 +519,15 @@
       <ul style="
       margin-top: -30px;
       margin-left: 100px;">
-        <li class="face"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-        <li class="mail"><a href=""><i class="far fa-envelope"></i></a></li>
-        <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li class="face"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="mail"><a href="http://gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
   </div>
   <!-- Footer -->
 
-
+<a href="#" class="back-to-top"><i class="fas fa-angle-up"></i></a>
   <!--/.Footer-->
 
   <!-- SCRIPTS -->
@@ -493,7 +546,6 @@
     new WOW().init();
   </script>
 
-  <!-- Time Counter -->
 
 </body>
 

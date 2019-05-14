@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Đăng Nhập</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -59,11 +59,26 @@
     }
     .container-mt40{
       width: 600px;
-      margin-top: 2px;
+      margin-top: 1px;
 
     }
     body{
-      background-color: black;
+      background-color: #000000a1;
+    }
+    .face{
+      background-color: blue;
+      color: white;
+      padding: 8px 13px 5px 13px;
+    }
+    .twitter{
+      background-color: lightblue;
+      color: white;
+      padding: 8px 13px 5px 13px;
+    }
+    .gmail{
+      background-color: #ff0000eb;
+      color: white;
+      padding: 8px 13px 5px 13px;
     }
   </style>
 </head>
@@ -75,7 +90,7 @@
 <div class="card">
 
   <h5 class="card-header info-color white-text text-center py-4">
-    <strong>Sign in</strong>
+    <strong>Logn in</strong>
   </h5>
 
   <!--Card content-->
@@ -111,31 +126,27 @@
       </div>
 
       <!-- Sign in button -->
-      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Logn in</button>
 
       <!-- Register -->
-      <p>Not a member?
-        <a href="">Register</a>
-      </p>
+      <div class="row mt-5"></div>
 
       <!-- Social login -->
-      <p>or sign in with:</p>
-      <a type="button" class="btn-floating btn-fb btn-sm">
+      <p>or Logn in with:</p>
+
+      <a href="" type="button" class="btn-floating btn-fb btn-sm face">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a type="button" class="btn-floating btn-tw btn-sm">
+      <a href="" type="button" class="btn-floating btn-tw btn-sm twitter">
         <i class="fab fa-twitter"></i>
       </a>
-      <a type="button" class="btn-floating btn-li btn-sm">
-        <i class="fab fa-linkedin-in"></i>
+      <a href="" type="button" class="btn-floating btn-li btn-sm gmail">
+        <i class="fas fa-envelope"></i>
       </a>
-      <a type="button" class="btn-floating btn-git btn-sm">
-        <i class="fab fa-github"></i>
-      </a>
-
+      
     </form>
     <!-- Form -->
-
+<div class="row mt-3"></div>
   </div>
 </div>
 </div>
