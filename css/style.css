@@ -34,6 +34,12 @@ body,
         .footer-left{
             display: none;
         }
+        .box17{
+            margin-bottom: 20px;
+        }
+        .footer-right p.lienhe{
+            padding-left: 10px !important;
+        }
     }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -54,6 +60,9 @@ body,
         .footer-left{
             display: none;
         }
+        .footer-right p.lienhe{
+            padding-left: 10px !important;
+        }
     }
 @media only screen and (min-width: 425px) and (max-width: 767px){
         .box17{
@@ -73,6 +82,9 @@ body,
         .footer-left{
             display: none;
         }
+        .footer-right p.lienhe{
+            padding-left: 10px !important;
+        }
     }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
         .footer-right ul{
@@ -82,17 +94,13 @@ body,
         .khaigiang p.lich{
             font-size: 29px;
             width: 496px;
-        }
-        body{
-            width: 97vh;
-        }
-        
+        }      
         .mask {
             width: 100vw;
         }
 
         .view {
-            width: 100vw;
+            width: 114vw;
         }
         .goclamviec{
             width: 722px;
@@ -108,7 +116,7 @@ body,
             width: 100vw;
         }
         .seriimg{
-            width: 100vw;
+            width: 114vw;
         }
         .khaigiang td.bang1{
             font-size: 16px;
@@ -120,6 +128,11 @@ body,
         }
         .footer-main{
             width: 100vw !important;
+        }
+        .footer-left{
+            font-size: 14px !important;
+            padding-left: 0px !important;
+            padding-top: 22px !important;
         }
     }
 
@@ -351,7 +364,7 @@ input[type="text"] {
 }
 
 .footer-all .footer1 h7 {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .footer-all .message {
@@ -375,7 +388,7 @@ input[type="text"] {
 }
 
 .footer-all {
-    background-color: hsl(218,8%,19%);
+    background-color: #141c2f;
     color: #ffffffdb;
     width: 100%;
     height: 429px;
@@ -601,4 +614,19 @@ body {
 
 .footer-right li a:hover{
     color: black;
+}
+
+.footer1 h7 a{
+   color: #5ca3e8;
+}
+.footer1 h7 a:hover {
+    color: #ff4a52;
+    padding-left: 5px;
+    transition: all 0.5s;
+}
+.footer-left p a{
+    color: #87c1ff;
+}
+.footer-left p a:hover{
+    color: #26efb7;
 }
