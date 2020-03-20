@@ -1,7 +1,7 @@
 $(window).on('load',function(event){
 	$('body').removeClass('preloading');
-	$('#circle').delay(2500).fadeOut('fast');
-	$('#wrap').delay(2500).fadeOut('fast');
+	$('#circle').delay(1500).fadeOut('fast');
+	$('#wrap').delay(1500).fadeOut('fast');
 
 });
 $(function(){
