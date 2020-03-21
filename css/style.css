@@ -31,7 +31,7 @@ body,
         strong{
             font-size: 25px;
         }
-        .footer-left{
+        .footer-left, .footer-all{
             display: none;
         }
         .box17{
@@ -63,6 +63,15 @@ body,
         .footer-right p.lienhe{
             padding-left: 10px !important;
         }
+
+          .footer-all .footer1{
+            width: 51% !important;
+            margin-left: -38px;
+            margin-top: 32px;
+        }
+        .footer-all .footer2{
+            width: 54% !important;
+        }
     }
 @media only screen and (min-width: 425px) and (max-width: 767px){
         .box17{
@@ -84,6 +93,14 @@ body,
         }
         .footer-right p.lienhe{
             padding-left: 10px !important;
+        }
+        .footer-all .footer1{
+            width: 51% !important;
+            margin-left: -38px;
+            margin-top: 32px;
+        }
+        .footer-all .footer2{
+            width: 54% !important;
         }
     }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -133,6 +150,14 @@ body,
             font-size: 14px !important;
             padding-left: 0px !important;
             padding-top: 22px !important;
+        }
+         .footer-all .footer1{
+            width: 50% !important;
+            margin-left: -38px;
+            margin-top: 32px;
+        }
+        .footer-all .footer2{
+            width: 50% !important;
         }
     }
 
@@ -319,20 +344,28 @@ textarea {
     padding-top: 4px;
     height: 67px;
     width: 260px;
+    border-radius: 7px;
+    border: 2px solid #00BCD4;
+    outline: none;
 }
 
 input[type="submit"] {
-    width: 126px;
-    height: 35px;
+    width: 120px;
+    height: 37px;
     margin-top: 15px;
-    background-color: #999999;
-    border: none;
-    box-shadow: 5px 3px 0px white;
+    background-color: #6197bd;
+    border: 2px solid #07cde6ab;
+    border-radius: 7px;
+    outline: none;
+    /* color: black; */
 }
 
 input[type="submit"]:hover {
-    transform: scale(1.1,1.1);
-    transition: all ease 0.2s;
+    background-color: #1b1a1a;
+    transition: all 0.5s;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid #00BCD4;
 }
 
 
@@ -343,6 +376,9 @@ input[type="text"] {
     height: 40px;
     font-size: 13px;
     margin-bottom: 12px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid #00BCD4;
 }
 
 .message p.cauhoi {
