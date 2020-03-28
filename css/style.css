@@ -72,6 +72,9 @@ body,
         .footer-all .footer2{
             width: 54% !important;
         }
+        .message{
+            display: none;
+        }
     }
 @media only screen and (min-width: 425px) and (max-width: 767px){
         .box17{
@@ -83,7 +86,7 @@ body,
         }
         .khaigiang p.lich{
             font-size: 29px;
-            width: 496px;
+            width: 510px;
         }
         body{
             width: 100vh;
@@ -102,6 +105,9 @@ body,
         .footer-all .footer2{
             width: 54% !important;
         }
+        .message{
+            display: none;
+        }
     }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
         .footer-right ul{
@@ -117,7 +123,7 @@ body,
         }
 
         .view {
-            width: 114vw;
+            width: 114.5vw;
         }
         .goclamviec{
             width: 722px;
@@ -159,10 +165,25 @@ body,
         .footer-all .footer2{
             width: 50% !important;
         }
+        .message{
+            display: none;
+        }
+       
     }
-
-
-
+@media only screen and (max-width: 1999px) and (min-width: 1600px){
+        .khaigiang td.bang1{
+            font-size: 27px;
+            padding: 13px;
+            width: 228px;
+        }
+        .khaigiang td.bang{
+            font-size: 27px;
+        }
+        .khaigiang p.lich{
+            font-size: 35px;
+        }
+       
+}
 
 
 
@@ -175,7 +196,9 @@ body,
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1C2331; } }
+    background-color: #1C2331; 
+    } 
+}
 
 *
 {
@@ -355,9 +378,9 @@ input[type="submit"] {
     margin-top: 15px;
     background-color: #6197bd;
     border: 2px solid #07cde6ab;
-    border-radius: 7px;
+    border-radius: 10px;
     outline: none;
-    /* color: black; */
+    font-weight: bold;
 }
 
 input[type="submit"]:hover {
