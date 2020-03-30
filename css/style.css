@@ -181,8 +181,33 @@ body,
         }
         .khaigiang p.lich{
             font-size: 35px;
+        }   
+}
+@media only screen and (max-width: 2399px) and (min-width: 2000px){
+        .khaigiang td.bang1{
+            font-size: 27px;
+            padding: 13px;
+            width: 260px;
         }
-       
+        .khaigiang td.bang{
+            font-size: 27px;
+        }
+        .khaigiang p.lich{
+            font-size: 35px;
+        }   
+}
+@media (min-width: 2400px){
+        .khaigiang td.bang1{
+            font-size: 30px;
+            padding: 13px;
+            width: 410px;
+        }
+        .khaigiang td.bang{
+            font-size: 29px;
+        }
+        .khaigiang p.lich{
+            font-size: 35px;
+        }   
 }
 
 
