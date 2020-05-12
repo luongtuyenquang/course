@@ -68,14 +68,16 @@
 <body class="preloading">
 
   <!-- Navbar -->
- <div id="wrap">
+ <div id="wrap" style="background-color: #0d161f;">
  <p class="nd">Loading...</p>	
 <div id="circle">
   <div class="loader">
     <div class="loader">
         <div class="loader">
            <div class="loader">
+           		<div class="loader">
 
+           		</div>
            </div>
         </div>
     </div>
@@ -105,14 +107,14 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="gt">
             <a class="nav-link" href="#">GIỚI THIỆU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">KHÓA HỌC</a>
+            <a class="nav-link" href="#kh">KHÓA HỌC</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">LIÊN HỆ</a>
+            <a class="nav-link" href="#footer-all">LIÊN HỆ</a>
           </li>
         </ul>
 
@@ -172,7 +174,7 @@
   </div>
   <!-- Full Page Intro -->
   <div class="container mt-40" id="starthere">
-    <h3 class="text-center">Các Khóa Học Miễn Phí</h3>
+    <h3 class="text-center" id="kh">Các Khóa Học Miễn Phí</h3>
     <div class="row mt-30">
       <div class="col-md-4 col-sm-6">
         <div class="box17">
@@ -382,10 +384,100 @@
     </ul>
   </nav>
 
+
+   <div class="row mt-5"></div>
+  <div class="duongvien"></div>
+
+  <div class="goclamviec">Góc Giải Trí Cùng Team</div>
+  <div class="container-fluid mt-40">
+            <div class="row mt-30">
+                <div class="col-md-3 col-sm-6">
+                    <div class="box6">
+                        <img src="img/bar.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">BAR !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box6">
+                        <img src="img/travel.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">BIỂN !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box6">
+                        <img src="img/dabong.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">ĐÁ BÓNG !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box6">
+                        <img src="img/leonui.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">LEO NÚI !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-40">
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6">
+                    <div class="box7">
+                        <img src="img/keoco.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">KÉO CO !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box7">
+                        <img src="img/bongchuyen.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">BÓNG CHUYỀN !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box7">
+                        <img src="img/batbong.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">TÌM BÓNG !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="box7">
+                        <img src="img/phoinang.jpg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">PHƠI NẮNG !!!</h3>
+                            <span class="post">Team Building</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  	
+  </div>
+
+
   <div class="row mt-5"></div>
   <div class="duongvien"></div>
 
-  <div class="goclamviec">Góc Làm Việc Và Giải Trí</div>
+  <div class="goclamviec">Góc Làm Việc</div>
   <div class="seriimg">
     <div class="imgone">
       <img src="image/1.jpg">
@@ -416,6 +508,8 @@
     </div>
 
   </div>
+
+ 
 
 
  <div class="row mt-5"></div>
@@ -471,7 +565,7 @@
 </div>
   <!--Footer-->
 
-  <div class="footer-all">
+  <div id="footer-all">
     <div class="footer1">
       <p>Trung Tâm Đào Tạo Lập Trình ITSu</p>
       <h7>Số 01-Phù Đổng Thiên Vương-Phường 8-TP.Đà Lạt</h7>
@@ -542,11 +636,31 @@
   <!-- Initializations -->
   <script type="text/javascript" src="js/script.js" ></script>
   <script type="text/javascript">
+    $(document).ready(function(){
+    $("a.nav-link, #kh").on('click', function(event){
+      if(this.hash !== ""){
+        event.preventDefault();
+        var hash = this.hash;
+        $('html,body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash=hash;
+        });
+      }
+    });
+  });
+
+    $(document).ready(function(){
+    $("#gt").click(function(){
+      alert("Phần này Admin chưa làm !!!");
+    });
+  });
+
     // Animations initialization
     new WOW().init();
   </script>
 
-
+  
 </body>
 
 </html>
