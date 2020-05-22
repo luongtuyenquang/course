@@ -444,6 +444,9 @@ table {
     transition: all 0.5s;
     cursor: pointer;
 }
+.footer-right li a:hover{
+    color: black;
+}
 
 .footer-main .footer-right {
     width: 50%;
@@ -589,6 +592,7 @@ input[type="text"] {
     text-align: center;
     margin-bottom: 18px;
     margin-bottom: 23px;
+    font-weight: bold;
 }
 
 
@@ -795,9 +799,7 @@ body {
     left: 20%;
 }
 
-.footer-right li a:hover{
-    color: black;
-}
+
 
 .footer1 h7 a{
    color: #5ca3e8;
@@ -831,7 +833,7 @@ body {
     background:rgba(0,0,0,.7);
     position:absolute;
     top:0;
-    left:-30%;
+    left:-36%;
     bottom:0;
     right:70%;
     transform:skew(20deg) translateX(-75%);
@@ -895,6 +897,7 @@ body {
 .box7:hover{
     border: 1px solid #0000008c;
     box-shadow: 2px 2px 4px 2px #696d86;
+    background-color: #000;
 }
 .box7:after,.box7:before{
     content: "";
@@ -956,4 +959,30 @@ body {
 }
 @media only screen and (max-width:990px){
     .box7{margin-bottom:20px;}
+}
+
+.future{
+    text-align: center;
+    margin-top: 20px;
+}
+.khung{
+    font-size: 60px;
+    border: 1px solid #989898;
+    border-radius: 4px;
+    padding: 25px 0px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.khung:hover {
+    color: #3259a2;
+    box-shadow: 17px 10px 61px -34px rgb(0, 0, 0);
+}
+.text-k h3{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.nav-future{
+    margin-bottom: 50px;
 }
