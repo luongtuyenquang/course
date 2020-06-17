@@ -17,16 +17,16 @@ body,
         }
         .footer-right ul{
             width: 205px;
-            transform: translate(1px, -6px);
+            transform: translate(1px, 1px);
         }
         .footer-main .footer-right li.face{
-            padding: 9px 24px;
+            padding: 4px 18px;
         }
         .footer-main .footer-right li.mail{
-            padding: 9px 19px;
+            padding: 4px 14px;
         }
         .footer-main .footer-right li.twitter{
-            padding: 9px 15px;
+            padding: 4px 12px;
         }
         strong{
             font-size: 25px;
@@ -392,7 +392,7 @@ table {
 
 .footer-main .footer-right li {
     display: inline;
-    padding: 14px 39px 5px 32px;
+    padding: 6px 38px 5px 32px;
 }
 
 .footer-main .footer-right li.twitter {
@@ -444,7 +444,7 @@ table {
     transition: all 0.5s;
     cursor: pointer;
 }
-.footer-right li a:hover{
+.footer-right li:hover{
     color: black;
 }
 
@@ -617,6 +617,7 @@ body {
 .box17{
     position:relative;
     overflow: hidden;
+    box-shadow: 5px 5px 6px 1px #404040;
 }
 
 .text-center{
@@ -645,7 +646,8 @@ body {
 .box17 img{
     width:100%;
     height:auto;
-    transition:all 1.5s ease 0s
+    transition:all 1.5s ease 0s;
+    border: 1px solid #616161;
 }
 .box17 .box-content,.box17 .icon li a{
     position:absolute;
@@ -827,6 +829,7 @@ body {
 .box6:hover{
     border: 1px solid #0000008c;
     box-shadow: 2px 2px 4px 2px #696d86;
+    cursor: pointer;
 }
 .box6:after{
     content: "";
@@ -898,6 +901,7 @@ body {
     border: 1px solid #0000008c;
     box-shadow: 2px 2px 4px 2px #696d86;
     background-color: #000;
+    cursor: pointer;
 }
 .box7:after,.box7:before{
     content: "";
@@ -977,6 +981,7 @@ body {
 .khung:hover {
     color: #3259a2;
     box-shadow: 17px 10px 61px -34px rgb(0, 0, 0);
+    border: 1px solid black;
 }
 .text-k h3{
     font-size: 16px;
