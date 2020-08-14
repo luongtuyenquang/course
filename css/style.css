@@ -147,6 +147,7 @@ body,
         .khaigiang p.lich{
             font-size: 29px;
             width: 496px;
+            margin-left: 121px;
         }      
         .mask {
             width: 100vw;
@@ -172,11 +173,11 @@ body,
             width: 114vw;
         }
         .khaigiang td.bang1{
-            font-size: 16px;
-            padding: 4px 55px;     
+            font-size: 17px;
+            padding: 4px 55px;
         }
         .khaigiang td.bang{
-            font-size: 18px;
+            font-size: 16px;
             padding: 12px 7px;
         }
         .footer-main{
@@ -218,7 +219,7 @@ body,
             width: 228px;
         }
         .khaigiang td.bang{
-            font-size: 17px;
+            font-size: 16px;
         }
         .khaigiang p.lich{
             font-size: 31px;
@@ -242,7 +243,7 @@ body,
             width: 228px;
         }
         .khaigiang td.bang{
-            font-size: 19px;
+            font-size: 17px;
         }
         .khaigiang p.lich{
             font-size: 31px;
@@ -338,7 +339,7 @@ body,
 }
 
 td.bang1 {
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     padding: 5px 0px 1px 0px;
@@ -349,7 +350,7 @@ td.bang1 {
 }
 
 td.bang {
-    font-size: 19px;
+    font-size: 15px;
     padding: 5px 21px 5px 20px;
     text-align: center;
     background-color: #0aa0d91c;
@@ -994,14 +995,16 @@ body {
 .box1{
     text-align: center;
     margin-bottom: 50px;
-    border-radius: 25px;
-    border: 1px solid black;
+    border-radius: 7px;
+    /* border: 1px solid white; */
     padding: 33px 0;
     margin-top: 12px;
     transition: all 0.4s;
+    background-color: white;
 }
 .box1 img{
     border-radius: 50%;
+    margin-top: 17px;
 }
 .box1 .ten{font-weight: bold;font-size: 19px;margin: 17px 0;}
 .box1 .info{color: black;font-size: 17px;margin-bottom: 22px;font-family: 'Roboto Condensed', sans-serif;}
