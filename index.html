@@ -149,7 +149,7 @@
 
     <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay
       muted loop>
-      <source src="https://mdbootstrap.com/img/video/Lines-min.mp4" type="video/mp4">
+      <source src="img/video-screen.mp4" type="video/mp4">
     </video>
 
     <!-- Mask & flexbox options-->
@@ -880,6 +880,9 @@
         <a href="http://gmail.com" target="_blank"><li class="mail"><i class="far fa-envelope"></i></li></a>
         <a href="https://twitter.com" target="_blank"><li class="twitter"><i class="fab fa-twitter"></i></li></a>
       </ul>
+      <p class="count">Tổng lượt truy cập: </p>
+      <div id="CounterVisitor">
+      </div>
     </div>
   </div>
   <!-- Footer -->
@@ -918,6 +921,22 @@
       alert("Phần này Admin chưa làm !!!");
     });
   });
+
+    var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
 
   // Animations initialization
     new WOW().init();

@@ -51,6 +51,12 @@ body,
         .service{
             display: none;
         }
+        p.count{
+            display: none;
+        }
+        #CounterVisitor{
+            display: none;
+        }
     }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -100,6 +106,12 @@ body,
         .service{
             display: none;
         }
+        p.count{
+            display: none;
+        }
+        #CounterVisitor{
+            display: none;
+        }
     }
 @media only screen and (min-width: 425px) and (max-width: 767px){
         .box17{
@@ -145,6 +157,12 @@ body,
             height: 77% !important;
         }
         .service{
+            display: none;
+        }
+        p.count{
+            display: none;
+        }
+        #CounterVisitor{
             display: none;
         }
     }
@@ -222,6 +240,12 @@ body,
         .service{
             display: none;
         }
+        p.count{
+            display: none;
+        }
+        #CounterVisitor{
+            display: none;
+        }
        
     }
 @media only screen and (max-width: 1439px) and (min-width: 1024px){
@@ -252,6 +276,12 @@ body,
             right: 9.5% !important;
             padding: 10px !important;
         }
+        p.count{
+            right: 100px !important;
+        }
+        #CounterVisitor{
+            right: 74px !important;
+        }
 }
 @media only screen and (max-width: 1999px) and (min-width: 1440px){
         .khaigiang td.bang1{
@@ -280,6 +310,12 @@ body,
             left: 9% !important;
             right: 9% !important;
             padding: 10px !important;
+        }
+        p.count{
+            right: 120px !important;
+        }
+        #CounterVisitor{
+            right: 92px !important;
         }
 }
 @media only screen and (max-width: 2399px) and (min-width: 2000px){
@@ -310,6 +346,12 @@ body,
             right: 24% !important;
             padding: 10px !important;
         }
+        p.count{
+            right: 150px !important;
+        }
+        #CounterVisitor{
+            right: 120px !important;
+        }
 }
 @media (min-width: 2400px){
         .khaigiang td.bang1{
@@ -338,6 +380,12 @@ body,
             left: 26% !important;
             right: 26% !important;
             padding: 10px !important;
+        }
+        p.count{
+            right: 150px !important;
+        }
+        #CounterVisitor{
+            right: 120px !important;
         }
 }
 
@@ -484,6 +532,7 @@ table {
 .footer-main .footer-right {
     width: 50%;
     float: left;
+    position: relative;
 }
 
 .footer-main .footer-left {
@@ -1230,4 +1279,17 @@ p.noidung{
     line-height: 26px;
     margin: -18px 17px 45px 0;
 
+}
+
+p.count{
+    position: absolute;
+    color: white;
+    top: 18px;
+    right: 120px;
+}
+#CounterVisitor{
+    position: absolute;
+    color: white;
+    top: 19px;
+    right: 95px;
 }
