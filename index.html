@@ -880,8 +880,9 @@
         <a href="http://gmail.com" target="_blank"><li class="mail"><i class="far fa-envelope"></i></li></a>
         <a href="https://twitter.com" target="_blank"><li class="twitter"><i class="fab fa-twitter"></i></li></a>
       </ul>
-      <p class="count">Tổng lượt truy cập: </p>
-      <div id="CounterVisitor">
+      
+      <div class="total">
+        <p class="truycap">Tổng lượt truy cập: <span id="count" class="dem"></span></p>
       </div>
     </div>
   </div>
@@ -922,21 +923,20 @@
     });
   });
 
-    var n = localStorage.getItem('on_load_counter');
+ 
 
-if (n === null) {
-  n = 0;
+
+const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+  fetch('https://api.countapi.xyz/update/florin-popcom/codepen/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  })
 }
-n++;
-
-localStorage.setItem("on_load_counter", n);
-
-nums = n.toString().split('').map(Number);
-document.getElementById('CounterVisitor').innerHTML = '';
-for (var i of nums) {
-  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
-}
-
 
   // Animations initialization
     new WOW().init();

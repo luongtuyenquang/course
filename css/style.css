@@ -51,10 +51,7 @@ body,
         .service{
             display: none;
         }
-        p.count{
-            display: none;
-        }
-        #CounterVisitor{
+        .total{
             display: none;
         }
     }
@@ -106,10 +103,7 @@ body,
         .service{
             display: none;
         }
-        p.count{
-            display: none;
-        }
-        #CounterVisitor{
+        .total{
             display: none;
         }
     }
@@ -159,10 +153,7 @@ body,
         .service{
             display: none;
         }
-        p.count{
-            display: none;
-        }
-        #CounterVisitor{
+        .total{
             display: none;
         }
     }
@@ -240,10 +231,7 @@ body,
         .service{
             display: none;
         }
-        p.count{
-            display: none;
-        }
-        #CounterVisitor{
+        .total{
             display: none;
         }
        
@@ -276,11 +264,8 @@ body,
             right: 9.5% !important;
             padding: 10px !important;
         }
-        p.count{
-            right: 100px !important;
-        }
-        #CounterVisitor{
-            right: 74px !important;
+        .total{
+            right: 50px !important;
         }
 }
 @media only screen and (max-width: 1999px) and (min-width: 1440px){
@@ -311,11 +296,8 @@ body,
             right: 9% !important;
             padding: 10px !important;
         }
-        p.count{
-            right: 120px !important;
-        }
-        #CounterVisitor{
-            right: 92px !important;
+        .total{
+            right: 90px !important;
         }
 }
 @media only screen and (max-width: 2399px) and (min-width: 2000px){
@@ -346,11 +328,8 @@ body,
             right: 24% !important;
             padding: 10px !important;
         }
-        p.count{
-            right: 150px !important;
-        }
-        #CounterVisitor{
-            right: 120px !important;
+        .total{
+            right: 230px !important;
         }
 }
 @media (min-width: 2400px){
@@ -381,11 +360,8 @@ body,
             right: 26% !important;
             padding: 10px !important;
         }
-        p.count{
-            right: 150px !important;
-        }
-        #CounterVisitor{
-            right: 120px !important;
+        .total{
+            right: 330px !important;
         }
 }
 
@@ -1281,15 +1257,15 @@ p.noidung{
 
 }
 
-p.count{
+.total{
     position: absolute;
-    color: white;
     top: 18px;
-    right: 120px;
-}
-#CounterVisitor{
-    position: absolute;
+    right: 89px;
     color: white;
-    top: 19px;
-    right: 95px;
+}
+p.truycap{
+    margin: 0;
+}
+span.dem{
+    font-weight: 400;
 }
