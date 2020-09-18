@@ -528,21 +528,25 @@ table {
 .imgthree img {
     width: 25%;
     float: inherit;
+    cursor: zoom-in;
 }
 
 .imgtwo img {
     width: 25%;
     float: left;
+    cursor: zoom-in;
 }
 
 .imgfour img {
     width: 25%;
     float: left;
+    cursor: zoom-in;
 }
 
 .imgone img {
     width: 25%;
     float: left;
+    cursor: zoom-in;
 }
 
 textarea {
