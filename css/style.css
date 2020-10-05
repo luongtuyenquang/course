@@ -54,6 +54,9 @@ body,
         .total{
             display: none;
         }
+        .box2{
+            flex-wrap: wrap;
+        }
     }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -106,6 +109,9 @@ body,
         .total{
             display: none;
         }
+        .box2{
+            flex-wrap: wrap;
+        }
     }
 @media only screen and (min-width: 425px) and (max-width: 767px){
         .box17{
@@ -155,6 +161,9 @@ body,
         }
         .total{
             display: none;
+        }
+        .box2{
+            flex-wrap: wrap;
         }
     }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -259,11 +268,6 @@ body,
         #wrap{
             height: 100% !important;
         }
-        .team-social{
-            left: 9.5% !important;
-            right: 9.5% !important;
-            padding: 10px !important;
-        }
         .total{
             right: 65px !important;
         }
@@ -291,13 +295,20 @@ body,
         #wrap{
             height: 100% !important;
         } 
-        .team-social{
-            left: 9% !important;
-            right: 9% !important;
-            padding: 10px !important;
-        }
         .total{
             right: 90px !important;
+        }
+        .box2 img{
+            width: 110%;
+        }
+        .team-social{
+            width: 110% !important;
+        }
+        .item{
+            margin: 0 35px !important;
+        }
+        .office{
+            width: 110% !important;
         }
 }
 @media only screen and (max-width: 2399px) and (min-width: 2000px){
@@ -323,13 +334,20 @@ body,
         #wrap{
             height: 100% !important;
         }
-        .team-social{
-            left: 24% !important;
-            right: 24% !important;
-            padding: 10px !important;
-        }
         .total{
             right: 230px !important;
+        }
+        .box2 img{
+            width: 130%;
+        }
+        .team-social{
+            width: 130% !important;
+        }
+        .item{
+            margin: 0 75px !important;
+        }
+        .office{
+            width: 130% !important;
         }
 }
 @media (min-width: 2400px){
@@ -355,13 +373,20 @@ body,
         #wrap{
             height: 100% !important;
         }
-        .team-social{
-            left: 26% !important;
-            right: 26% !important;
-            padding: 10px !important;
-        }
         .total{
             right: 330px !important;
+        }
+        .box2 img{
+            width: 150%;
+        }
+        .team-social{
+            width: 150% !important;
+        }
+        .item{
+            margin: 0 110px !important;
+        }
+        .office{
+            width: 150% !important;
         }
 }
 
@@ -1053,71 +1078,6 @@ body {
 .nav-future{
     margin-bottom: 50px;
 }
-.box1{
-    text-align: center;
-    margin-bottom: 25px;
-    border-radius: 7px;
-    padding: 33px 0;
-    transition: all 0.4s;
-   
-}
-.box1 img{
-    border-radius: 10px;
-}
-.box1 .ten{font-weight: bold;font-size: 19px;margin: 17px 0;}
-.box1 .info{color: black;font-size: 17px;margin-bottom: 10px;font-family: 'Roboto Condensed', sans-serif;}
-
-
-.box1:hover{
-   
-}
-.team-img{
-    position: relative;
-    overflow: hidden;
-}
-.team-social{
-    position: absolute;
-    background: rgb(2 4 16 / 74%);
-    right: 0;
-    left: 0;
-    padding: 15px;
-    bottom: 0;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
-}
-.team-social ul{
-    margin: 0px;
-    padding: 0px;
-}
-.team-social ul li{
-    list-style: none;
-    display: inline-block;
-}
-.team-social li a{
-    color: white;
-    font-size: 26px;
-    margin: 0 15px;
-    transition: .4s;
-    transform: translateY(60px);
-    opacity: 1;
-    visibility: visible;
-    display: inline-block;
-}
-.team-img:hover .team-social{
-    visibility: visible;
-    opacity: 1;
-}
-.team-social li:nth-child(1) a {
-    transition-delay: 0.1s;
-}
-.team-img:hover .team-social li a{
-    transform: translateY(3px);
-    visibility: visible;
-}
 
 .primary-btn{
     display: inline-block;
@@ -1272,4 +1232,57 @@ p.truycap{
 }
 span.dem{
     font-weight: 400;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.item{
+    width: 300px;
+    color: white;
+    margin: 0 20px;
+    text-align: center;
+    position: relative;
+}
+.team-social{
+    position: absolute;
+    width: 100%;
+    bottom: 94px;
+    padding: 7px;
+    visibility: hidden;
+    opacity: 0;
+}
+.item:hover .team-social{
+    background: rgb(2 4 16 / 87%);
+     -webkit-transition: linear .4s;
+    -moz-transition: linear .4s;
+    -o-transition: linear .4s;
+    transition: linear .4s;
+    visibility: visible;
+    opacity: 1;
+}
+.team-social ul{
+    margin: 0px;
+}
+.team-social li{
+    display: inline-block;
+    list-style: none;
+
+}
+.team-social ul a{
+    color: white;
+    font-size: 28px;
+    margin: 0 15px;
+}
+.office{
+    color: black;
+    margin-top: 15px;
+}
+.office h4{
+    font-weight: 500;
+}
+.office p{
+    font-size: 18px;
 }
