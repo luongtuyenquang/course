@@ -1249,7 +1249,7 @@ span.dem{
 .team-social{
     position: absolute;
     width: 100%;
-    bottom: 94px;
+    bottom: 91px;
     padding: 7px;
     visibility: hidden;
     opacity: 0;
@@ -1282,6 +1282,7 @@ span.dem{
 }
 .office h4{
     font-weight: 500;
+    font-size: 21px;
 }
 .office p{
     font-size: 18px;
