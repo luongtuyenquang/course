@@ -1,7 +1,7 @@
 $(window).on('load',function(event){
 	$('body').removeClass('preloading');
-	$('#circle').delay(1500).fadeOut('fast');
-	$('#wrap').delay(1500).fadeOut('fast');
+	$('#circle').delay(500).fadeOut('fast');
+	$('#wrap').delay(500).fadeOut('fast');
 });
 $(function(){
 	//Biến chiều cao khi kéo xuống sẽ hiện nút

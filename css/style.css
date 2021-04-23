@@ -1248,7 +1248,7 @@ span.dem{
 }
 .team-social{
     position: absolute;
-    width: 100%;
+    width: 102%;
     bottom: 91px;
     padding: 7px;
     visibility: hidden;
@@ -1286,4 +1286,7 @@ span.dem{
 }
 .office p{
     font-size: 18px;
+}
+.item img{
+    border: 5px solid black;
 }
