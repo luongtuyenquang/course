@@ -142,6 +142,7 @@ html{
 }
 .course-img {
     overflow: hidden;
+    display: flex;
 }
 .body-course__img {
     width: 100%;
@@ -317,6 +318,7 @@ html{
     box-shadow: 0px 2px 7px #053242cc;
     position: relative;
     animation: modalCourses ease 0.5s;
+    width: 33%;
 }
 .modal-course-notif__content {
     font-family: 'Roboto', sans-serif;

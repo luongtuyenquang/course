@@ -15,6 +15,9 @@
     .line-container {
         width: 79%;
     }
+    .modal-course-notif {
+        width: 450px;
+    }
 }
 
 /* * Từ 1024px tới 1439px */
@@ -24,6 +27,15 @@
     }
     .nav-icon, .nav-icon-close {
         display: none;
+    }
+    .body-course {
+        width: 80%;
+    }
+    .modal-course-notif {
+        width: 40%;
+    }
+    .modal-course__img {
+        width: 65%
     }
 }
 
@@ -45,7 +57,13 @@
 
     /* Body */
     .body-course {
-        width: 75%;
+        width: 67%;
+    }
+    .modal-course-notif {
+        width: 47%;
+    }
+    .modal-course__img {
+        width: 60%
     }
 }
 
@@ -112,6 +130,9 @@
     .line-container {
         width: 93%;
     }
+    .body-course {
+        width: 70%;
+    }
     /* Footer */
     .footer-feedback__form-submit {
         width: 92%;
@@ -128,6 +149,12 @@
     }
     .footer-intro__img {
         width: 150px;
+    }
+    .modal-course-notif {
+        width: 60%;
+    }
+    .modal-course__img {
+        width: 65%
     }
 
     /* Keyframe */
@@ -236,5 +263,11 @@
     }
     .view {
         display: none;
+    }
+    .modal-course-notif {
+        width: 100%;
+    }
+    .modal-course__img {
+        width: 60%
     }
 }
