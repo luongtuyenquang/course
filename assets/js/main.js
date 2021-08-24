@@ -105,13 +105,11 @@ function navMobile(){
         open.style.display = 'none'
     })
     headerVideo.addEventListener('click', function(){
-        // e.stopPropagation()
         navMoblile.style.display = 'none'
         close.style.display = 'none'
         open.style.display = 'block'
     })
     body.addEventListener('click', function(){
-        // e.stopPropagation()
         navMoblile.style.display = 'none'
         close.style.display = 'none'
         open.style.display = 'block'
@@ -122,7 +120,27 @@ function navMobile(){
         open.style.display = 'block'
         navMoblile.style.display = 'none'
     })
+}
 
+function modalCourse(){
+    const courses = getClasses('.body-course')
+    const modal = getClass('.modal-course')
+    const iconClose = getClass('.modal-close-icon')
+    const modalNotifi = getClass('.modal-course-notif')
+    courses.forEach(function(course){
+        course.onclick = function(){
+            modal.style.display = 'flex'
+        }
+    })
+    iconClose.addEventListener('click', function(){
+        modal.style.display = 'none'
+    })
+    modal.addEventListener('click', function(){
+        modal.style.display = 'none'
+    })
+    modalNotifi.addEventListener('click', function(e){
+        e.stopPropagation()
+    })
 }
 
 navMobile()
@@ -131,3 +149,4 @@ renderCourseBasic()
 renderCourseAdvance()
 headerScroll()
 backTop()
+modalCourse()
