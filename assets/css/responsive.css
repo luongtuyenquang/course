@@ -1,9 +1,9 @@
 /* PC-large --Từ 1440px trở lên--*/ 
 @media only screen and (min-width: 1440px){
     /* Header */
-    .nav {
+    /* .nav {
         display: flex;
-    }
+    } */
     .nav-icon, .nav-icon-close {
         display: none;
     }
@@ -22,9 +22,9 @@
 
 /* * Từ 1024px tới 1439px */
 @media only screen and (min-width: 1024px) and (max-width: 1439px){
-    .nav {
+    /* .nav {
         display: flex;
-    }
+    } */
     .nav-icon, .nav-icon-close {
         display: none;
     }
@@ -42,9 +42,9 @@
 /* Từ 800px tới 1023px */
 @media only screen and (min-width: 800px) and (max-width: 1023px){
     /* Header */
-    .nav {
+    /* .nav {
         display: flex;
-    }
+    } */
     .nav-icon, .nav-icon-close{
         display: none;
     }
@@ -70,9 +70,6 @@
 /* Tablet --Từ 550px tới 799px--*/
 @media only screen and (min-width: 550px) and (max-width: 799px){
     /* Header */
-    .nav {
-        display: none;
-    }
     .nav-mobile {
         position: fixed;
         top: 0;
@@ -82,7 +79,6 @@
         background-color: white;
         flex-direction: column;
         padding-top: 6rem;
-        display: none;
         box-shadow: -4px 0px 7px #00000080;
         animation: navMobile ease 1s;
     }
@@ -183,7 +179,6 @@
         background-color: white;
         flex-direction: column;
         padding-top: 6rem;
-        display: none;
         box-shadow: -4px 0px 7px #00000080;
         animation: navMobile ease 1s;
     }

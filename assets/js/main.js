@@ -95,30 +95,18 @@ function getView(){
 function navMobile(){
     const close = getClass('.nav-icon-close')
     const open = getClass('.nav-icon-open')
-    const navMoblile = getClass('.nav-mobile')
-    const headerVideo = getClass('.header-video')
-    const body = getClass('.body')
+    const nav = getClass('.nav')
     open.addEventListener('click', function(){
-        navMoblile.classList.add('nav-mobile')
-        navMoblile.style.display = 'block'
+        nav.classList.add('nav-mobile')
+        nav.style.display = 'flex'
         close.style.display = 'block'
         open.style.display = 'none'
     })
-    headerVideo.addEventListener('click', function(){
-        navMoblile.style.display = 'none'
-        close.style.display = 'none'
-        open.style.display = 'block'
-    })
-    body.addEventListener('click', function(){
-        navMoblile.style.display = 'none'
-        close.style.display = 'none'
-        open.style.display = 'block'
-    })
     close.addEventListener('click', function(){
-        navMoblile.classList.remove('nav-mobile')
+        nav.classList.remove('nav-mobile')
         close.style.display = 'none'
         open.style.display = 'block'
-        navMoblile.style.display = 'none'
+        nav.style.display = 'none'
     })
 }
 
@@ -126,10 +114,11 @@ function modalCourse(){
     const courses = getClasses('.body-course')
     const modal = getClass('.modal-course')
     const iconClose = getClass('.modal-close-icon')
+    const open = getClass('.nav-icon-open')
     const modalNotifi = getClass('.modal-course-notif')
     courses.forEach(function(course){
         course.onclick = function(){
-            modal.style.display = 'flex'
+            modal.style.display = 'flex'      
         }
     })
     iconClose.addEventListener('click', function(){
